@@ -8,7 +8,7 @@ addLayer("1", {
     }},
     color: "#CFDC4F",
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
-    resource: "one points", // Name of prestige currency
+    resource: "Ones", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
@@ -24,7 +24,7 @@ addLayer("1", {
     hotkeys: [
         {key: "1", description: "1: Reset for one points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true},
+    layerShown(){return true}
 
 })
 addLayer("2", {
@@ -37,9 +37,9 @@ addLayer("2", {
     }},
     color: "#533CA2",
     requires: new Decimal(100), // Can be a function that takes requirement increases into account
-    resource: "two points", // Name of prestige currency
-    baseResource: "one points", // Name of resource prestige is based on
-    baseAmount() {return player.points}, // Get the current amount of baseResource
+    resource: "Twos", // Name of prestige currency
+    baseResource: "Ones", // Name of resource prestige is based on
+    baseAmount() {return player.ones}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
@@ -51,7 +51,7 @@ addLayer("2", {
     },
     row: 1, // Row the layer is in on the tree (0 is the first row)
     hotkeys: [
-        {key: "2", description: "2: Reset for two points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+        {key: "2", description: "2: Reset ones for two points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true},
 
