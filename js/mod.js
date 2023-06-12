@@ -5,7 +5,7 @@ let modInfo = {
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
 
-	discordName: "",
+	discordName: "Lux_#8542",
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
@@ -13,14 +13,14 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Literally nothing",
+	num: "0.0.1.2",
+	name: "Second Layer Things",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+		- Added the second layer for testing. I forgot to mention this in 0.0.1, so it is mentioned here.
+		- Attempting to fix a bug where two points are based of the wrong currency, hopefully it works correctly.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
