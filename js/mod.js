@@ -13,14 +13,14 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.1.2",
-	name: "Second Layer Things",
+	num: "0.0.1.3",
+	name: "Bugfixing and Formulas",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Added the second layer for testing. I forgot to mention this in 0.0.1, so it is mentioned here.
-		- Attempting to fix a bug where two points are based of the wrong currency, hopefully it works correctly.`
+		- Changed the 2 points formula.
+		- Attempted to fix a bug where two points are based of the wrong currency, hopefully it works correctly.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
