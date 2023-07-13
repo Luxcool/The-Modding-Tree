@@ -13,13 +13,14 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.1.3",
-	name: "Bugfixing and Formulas",
+	num: "0.0.1.3.1",
+	name: "Bugfixing and 2 points changes",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Changed the 2 points formula.
+		- Made it so you can always see 2 points.
+		- Made 2 points' cost start earlier
 		- Attempted to fix a bug where two points are based of the wrong currency, hopefully it works correctly.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`

@@ -32,8 +32,8 @@ addLayer("2", {
     symbol: "2", // This appears on the layer's node. Default is the id with the first letter capitalized
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     startData() { return {
-        unlocked: false,
-		points: new Decimal(50),
+        unlocked: true,
+		points: new Decimal(10),
     }},
     color: "#533CA2",
     requires: new Decimal(100, ones), // Can be a function that takes requirement increases into account
