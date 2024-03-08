@@ -13,14 +13,15 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.1.4",
-	name: "Upgrades?",
+	num: "0.0.1.4.1",
+	name: "Ones are back baby!",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0.1.4</h3><br>
-		- Removed 2 points for now
-		- Hopefully added an upgrade.`
+	<h3>v0.0.1.4.1</h3><br>
+		- Ones should show up now.
+		- Renamed "More 1s" to "More Ones".
+		- Added the effect to "More Ones".`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -41,7 +42,8 @@ function canGenPoints(){
 function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
-
+		js
+		if (hasUpgrade('1', 11)) gain = gain.times(2)
 	let gain = new Decimal(1)
 	return gain
 }

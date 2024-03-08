@@ -29,10 +29,10 @@ addLayer("1", {
         js,
         11: {
             js,
-            title: "More 1s",
+            title: "More Ones",
             description: "Double your point gain.",
             cost: new Decimal(10),
         },
     },
-    layerShown(){return true},
+    layerShown(){return true}
 })
