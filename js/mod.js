@@ -41,12 +41,10 @@ function canGenPoints(){
 // Calculate points/sec!
 function getPointGen() {
 	if(!canGenPoints())
-	
 		return new Decimal(0)
-		
-	let gain = new Decimal(1)
-	js
+		js
 	if (hasUpgrade('1', 11)) gain = gain.times(2)
+	let gain = new Decimal(1)
 	return gain
 }
 
