@@ -13,14 +13,14 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.1.4.2",
-	name: "Finally, the game works!",
+	num: "0.0.1.4.3",
+	name: "Fixed a bug by deleting stuff.",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0.1.4.2</h3><br>
-		- Removed the effect of "More Ones" for now,
-		 it was causing the game to break.`
+	<h3>v0.0.1.4.3</h3><br>
+		- Re-added the effect of "More Ones", with a slight change. If this breaks the game, I will remove it.
+		- I have tried so hard to make Ones show up. PLease work.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -41,7 +41,9 @@ function canGenPoints(){
 function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
-
+		```js
+		if (hasUpgrade('p', 11)) gain = gain.times(2)
+		```
 	let gain = new Decimal(1)
 	return gain
 }
