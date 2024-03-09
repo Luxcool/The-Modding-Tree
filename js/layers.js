@@ -34,6 +34,8 @@ addLayer("1", {
             cost: new Decimal(10),
         },
     },
-    layerShown(){return true}
-    
+    layerShown(){return true},
+
+   
+
 })
