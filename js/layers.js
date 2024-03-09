@@ -24,18 +24,15 @@ addLayer("1", {
     hotkeys: [
         {key: "1", description: "1: Reset points for ones", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    js,
-    upgrades: {
-        js,
-        11: {
-            js,
-            title: "More Ones",
-            description: "Double your point gain.",
-            cost: new Decimal(10),
-        },
-    },
     layerShown(){return true},
-
-   
-
+js,
+upgrades: {
+    js,
+    11: {
+        js,
+        title: "More Ones",
+        description: "Double your point gain.",
+        cost: new Decimal(10),
+    },
+},
 })

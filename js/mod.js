@@ -13,14 +13,13 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0.1.4.3",
-	name: "Fixed a bug by deleting stuff.",
+	num: "0.0.1.4.4",
+	name: "Maybe moving this will work.",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0.1.4.3</h3><br>
-		- Re-added the effect of "More Ones", with a slight change. If this breaks the game, I will remove it.
-		- I have tried so hard to make Ones show up. PLease work.`
+	<h3>v0.0.1.4.4</h3><br>
+		- Moved the upgrades after showing the layer.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
